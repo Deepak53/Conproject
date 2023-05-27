@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coin Data</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    input {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search..." />
+  <button onclick="filterData()">Search</button>
+  <button onclick="sortDataByMarketCap()">Sort by Market Cap</button>
+  <button onclick="sortDataByPercentageChange()">Sort by Percentage Change</button>
+  <table id="coinTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Symbol</th>
+        <th>Current Price</th>
+        <th>Total Volume</th>
+      </tr>
+    </thead>
+    <tbody id="coinTableBody">
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
